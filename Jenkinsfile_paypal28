@@ -8,7 +8,7 @@ node{
     sh "${mavenHome}/bin/mvn install"
  } 
  stage('3CodeQuality'){
-  sh "${mavenHome}/bin/mvn sonar:sonar"
+  sh "${mavenHome}/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.8.6/bin/mvn sonar:sonar"
  }  
  /*
  stage('4UploadArtifacts'){
